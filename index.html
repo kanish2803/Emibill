@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EMI Bill Template</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bill-container">
+  <h2>EMI Recorded Bill</h2>
+  
+  <label for="name">Customer Name</label>
+  <input type="text" id="name" placeholder="Enter customer name">
+
+  <label for="date">Date</label>
+  <input type="date" id="date">
+
+  <label for="initial">Initial Payment (₹)</label>
+  <input type="number" id="initial" placeholder="Enter amount">
+
+  <label for="due">EMI Due Type</label>
+  <select id="due">
+    <option value="Monthly">Monthly</option>
+    <option value="Weekly">Weekly</option>
+  </select>
+
+  <label for="photo">Customer Photo</label>
+  <input type="file" id="photo" accept="image/*" onchange="previewPhoto(event)">
+
+  <div class="photo-preview" id="photoPreview"></div>
+
+  <button onclick="generateBill()">Generate Bill</button>
+  <button onclick="downloadPDF()">Download as PDF</button>
+
+  <div class="output" id="output" style="display: none;"></div>
+</div>
+
+<!-- PDF Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
