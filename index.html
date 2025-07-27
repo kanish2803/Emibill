@@ -2,24 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>EMI Bill Template</title>
+  <title>EMI Bill - A5 Format</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="bill-container">
-  <h2>EMI Recorded Bill</h2>
-  
+  <h2>EMI Bill</h2>
+
   <label for="name">Customer Name</label>
   <input type="text" id="name" placeholder="Enter customer name">
 
-  <label for="date">Date</label>
+  <label for="date">Payment Date</label>
   <input type="date" id="date">
 
   <label for="initial">Initial Payment (₹)</label>
   <input type="number" id="initial" placeholder="Enter amount">
 
-  <label for="due">EMI Due Type</label>
+  <label for="due">EMI Frequency</label>
   <select id="due">
     <option value="Monthly">Monthly</option>
     <option value="Weekly">Weekly</option>
@@ -36,9 +36,8 @@
   <div class="output" id="output" style="display: none;"></div>
 </div>
 
-<!-- PDF Library -->
+<!-- PDF generation -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 <script src="script.js"></script>
-
 </body>
 </html>
