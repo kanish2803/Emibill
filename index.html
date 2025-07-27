@@ -13,11 +13,17 @@
   <label for="name">Customer Name</label>
   <input type="text" id="name" placeholder="Enter customer name">
 
-  <label for="date">Payment Date</label>
+  <label for="mobile">Mobile Number</label>
+  <input type="tel" id="mobile" placeholder="Enter mobile number" maxlength="15">
+
+  <label for="date">Start Date</label>
   <input type="date" id="date">
 
   <label for="initial">Initial Payment (₹)</label>
-  <input type="number" id="initial" placeholder="Enter amount">
+  <input type="number" id="initial" placeholder="Enter initial payment">
+
+  <label for="dues">Total Dues (Number of EMIs)</label>
+  <input type="number" id="dues" placeholder="Enter number of dues">
 
   <label for="due">EMI Frequency</label>
   <select id="due">
@@ -36,7 +42,7 @@
   <div class="output" id="output" style="display: none;"></div>
 </div>
 
-<!-- PDF generation -->
+<!-- PDF Library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
