@@ -5,7 +5,7 @@ body {
 }
 
 .bill-container {
-  width: 420px; /* A5 width in pixels */
+  width: 420px; /* A5 width */
   margin: auto;
   background: white;
   padding: 15px;
@@ -66,6 +66,7 @@ button:hover {
   background: #fafafa;
   border: 1px solid #ddd;
   border-radius: 6px;
+  font-size: 13px;
 }
 
 .output img {
